@@ -4,7 +4,7 @@ interface User {
     email: string;
     // Omit password for security reasons (avoid storing passwords in plain text)
   }
-  
+   
   type UserProfile = Pick<User, 'name' | 'email'>;
   
   type UpdatePartial = Partial<UserProfile>;
